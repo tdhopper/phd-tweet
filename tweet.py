@@ -34,6 +34,7 @@ def tweet():
 
 schedule.every(895).minutes.do(tweet)
 
+tweet()
 while True:
     schedule.run_pending()
     time.sleep(1)
