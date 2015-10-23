@@ -1,7 +1,7 @@
-Run instructions:
-
+### Run instructions
 
 On this machine:
+
 ```
 scp * root@45.55.151.24:~/phd
 scp .env root@45.55.151.24:~/phd
@@ -16,4 +16,13 @@ source activate phd
 pip install -r requirements.php
 source activate .env
 python tweet.py
+```
+
+### `.env` File
+
+```
+export PHD_CONSUMER_KEY=
+export PHD_CONSUMER_SECRET=
+export PHD_TOKEN=
+export PHD_TOKEN_SECRET=
 ```
