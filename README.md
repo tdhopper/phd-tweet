@@ -13,7 +13,7 @@ On the remote machine in tmux:
 cd phd
 conda create -n phd python=2 pip
 source activate phd
-pip install -r requirements.php
+pip install -r requirements.pip
 source activate .env
 python tweet.py
 ```
