@@ -30,7 +30,12 @@ def tweet():
     auth = tw.OAuth(**cred)
     t = tw.Twitter(auth=auth)
     status = random.choice(content)
-    t.statuses.update(status=status)
+    try:
+        t.statuses.update(status=status)
+    except tw.TwitterHTTPError as e:
+        print "Failure:", status
+        print e
+
 
 schedule.every(1111).minutes.do(tweet)
 
