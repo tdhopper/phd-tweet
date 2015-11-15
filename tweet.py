@@ -30,7 +30,7 @@ def tweet():
     status = random.choice(content)
     t.statuses.update(status=status)
 
-schedule.every(895).minutes.do(tweet)
+schedule.every(1111).minutes.do(tweet)
 
 tweet()
 while True:
